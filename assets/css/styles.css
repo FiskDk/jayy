@@ -1,8 +1,12 @@
-@media all and (min-width:1px) and (max-width: 1024px) {
-  .justify-content-xl-center {
-    width: 85%!important;
+@media (min-width:1px max-width=1024px) {
+  -mainDiv {
+    widht: 90%;
   }
 }
 
-/*  put your css styles in here  */
+@media all and (min-width:0px) and (max-width: 1024px) {
+  .mainDiv {
+    width: 90%!important;
+  }
+}
 
