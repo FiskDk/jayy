@@ -17,7 +17,7 @@
     <div>
         <div class="header-dark" style="background-color: #311d3f;background-image: url(&quot;null&quot;);">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                <div class="container"><a class="navbar-brand" href="#">Project TYS</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="container"><a class="navbar-brand" href="#">The Horny Jail</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse"
                         id="navcol-1">
                         <!-- 
@@ -47,6 +47,10 @@
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
 <script>
+   document.getElementById("downloadBtn").addEventListener("click", function(){
+              console.log("Starting download")
+download();
+    });
    var rimgurl = ""
    const imgurl="https://api.furry.bot/v2/furry/yiff/gay"
 $.getJSON(imgurl, function(result){
@@ -184,9 +188,7 @@ addToStash()
     function download(){
 forceDownload(document.getElementById("img").src, "ProjectTYS_" + document.getElementById("img").name)
 }
-            document.getElementById("downloadBtn").addEventListener("click", function(){
-download();
-    });
+           
             document.getElementById("signoutBtn").addEventListener("click", function(){
     firebase.auth().signOut().then(function() {
   // Sign-out successful.
