@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/767987990907060254/784516851111034960/image0.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>ProjectTYS</title>
+    <title>The Horny Jail</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -13,13 +14,19 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
-<body id="imgViewer" style="background-color: #311d3f;max-width: 100%;overflow: scroll;max-height: 100%;height: 99%;width: 99%;">
+<body id="imgViewer" style="background-color: #090909;max-width: 100%;overflow: scroll;max-height: 100%;height: 99%;width: 99%;">
     <div>
-        <div class="header-dark" style="background-color: #311d3f;background-image: url(&quot;null&quot;);">
+        <div class="header-dark" style="background-color: #090909;background-image: url(&quot;null&quot;);">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                <div class="container"><a class="navbar-brand" href="#">The Horny Jail</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="container"><a class="navbar-brand" style="font-size: 30px;"href="#">The Horny Jail</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse"
                         id="navcol-1">
+                        <img src="https://media.discordapp.net/attachments/767987990907060254/784516851111034960/image0.png" width="64" style="padding-right: 10px;">
+                        <a>
+                          Made by Jayy :3
+                          <br>
+                          Credits for the image API goes to Donovan Daniels & Chris Hernandez 
+                        </a>
                         <!-- 
                         <ul class="nav navbar-nav">
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#">Discover</a></li>
@@ -31,12 +38,49 @@
                     </div>
                 </div>
             </nav>
+            <div>
+              <h1 style="margin-bottom: -8px;">Chose mode</h1>
+                <a href="index.html#straight">Straight</a>
+                <a href="index.html#gay">Gay</a>
+                <a href="index.html#lesbian">Lesbian</a>
+                <a href="index.html#´dickgirl">Dickgirl</a>
+        <p style="color:lightgrey; margin-bottom: -10px;">Note: if you dont get an image, try to reload the page :3</p>
+              <a style="margin:auto;display: block;color:lightgray">
+
+                <h1>Signed by</h1>
+                <h5>Carrot :<br>Cum one! Cum all! Horny fucktards unite!</h5>
+              
+                <h5>cynda :<br>Scalie Supremacy. Scalie for President, 2024.</h5>
+               
+                <h5>SnakeOnPluto :<br>The one who made this site is cute</h5>
+               
+                <h5>Onion Drovax Tree :<br>You win some, You lose some</h5>
+             
+                <h5>Dodgerr :<br>bussy</h5>
+        
+                <h5>YAC :<br>I got flustered into a seizure</h5>
+        
+                <h5>Alpha Lancer :<br>Im better than you!</h5>
+           
+                <h5>cannix :<br>Ah fuck, what have you done again?</h5>
+         
+                <h5>Holland :<br>I got the best hair, I don't care what anyone says.</h5>
+         
+                <h5>Jayy :<br>coochie man</h5>
+          
+                <h5>Presumptuous Spacemans :<br>damn it i just eye raped myself</h5>
+
+                <h5>Bacon Daddeh :<br>hitler did not drink himself to death for nothing</h5>
+                <h5>Cennethdk :<br>Women. back in the kitchen</h5>
+              </a>
+            </div>
         </div>
     </div>
     <div class="d-flex justify-content-center align-items-end" id="imgView" style="height: 100%;width: 100%;margin-top: -74px;"></div>
     <div class="d-flex justify-content-center align-items-end mb-auto fixed-bottom top">
      <!-- <button class="btn btn-primary btn btn-primary btn-circle btn-xl top" type="button" id="saveToStash"><i class="far fa-save" style="font-size: 32px;"></i></button>
-     --><button class="btn btn-primary btn btn-secondary btn-circle btn-xl top" type="button" id="downloadBtn" style="margin-left: ;margin-right: 32px;"><i class="fas fa-download" style="font-size: 32px;"></i></button><button class="btn btn-primary btn btn-danger btn-circle btn-xl top" type="button" id="btnNext"><i class="fas fa-arrow-right" style="font-size: 32px;"></i></button></div>    <script
+     -->
+     <button class="btn btn-primary btn btn-secondary btn-circle btn-xl top" type="button" id="downloadBtn" style="margin-left: ;margin-right: 32px;"><i class="fas fa-download" style="font-size: 32px;"></i></button><button class="btn btn-primary btn btn-accept btn-circle btn-xl top" type="button" id="btnNext"><i class="fas fa-arrow-right" style="font-size: 32px;"></i></button></div>    <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"32px
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>   
@@ -52,7 +96,20 @@
 download();
     });
    var rimgurl = ""
-   const imgurl="https://api.furry.bot/v2/furry/yiff/gay"
+   var imgurl="https://api.furry.bot/v2/furry/yiff/gay"
+   if (window.location.href.indexOf("straight") > -1) {
+    var imgurl="https://api.furry.bot/v2/furry/yiff/straight"
+    }
+    if (window.location.href.indexOf("lesbian") > -1) {
+    var imgurl="https://api.furry.bot/v2/furry/yiff/lesbian"
+    }
+    if (window.location.href.indexOf("dickgirl") > -1) {
+    var imgurl="https://api.furry.bot/v2/furry/yiff/dickgirl"
+    }
+        if (window.location.href.indexOf("gay") > -1) {
+    var imgurl="https://api.furry.bot/v2/furry/yiff/gay"
+    }
+   
 $.getJSON(imgurl, function(result){
     console.log(result)
     console.log(result.images[0].url)
@@ -198,7 +255,11 @@ forceDownload(document.getElementById("img").src, "ProjectTYS_" + document.getEl
     });
 
     function forceDownload(url, fileName){
-    var xhr = new XMLHttpRequest();
+      
+      //replacement because CORS is fucked :c
+      window.open(url)
+
+     /* var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
     xhr.responseType = "blob";
     xhr.onload = function(){
@@ -211,7 +272,8 @@ forceDownload(document.getElementById("img").src, "ProjectTYS_" + document.getEl
         tag.click();
         document.body.removeChild(tag);
     }
-    xhr.send();
+    xhr.send(); 
+  */
 }
                      document.getElementById("myStashBtn").addEventListener("click", function(){
 location.href = "./myStash.html"
